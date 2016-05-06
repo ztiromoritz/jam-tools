@@ -1,0 +1,26 @@
+(function (global) {
+
+    var <%= Name %> = function () {
+        Phaser.State.call(this);
+
+    };
+
+    <%= Name %>.prototype = Object.create(Phaser.State.prototype);
+    <%= Name %>.prototype.constructor = <%= Name %>;
+
+
+    <%= Name %>.prototype.preload = function () {
+
+    };
+
+    <%= Name %>.prototype.create = function () {
+
+    };
+
+    <%= Name %>.prototype.update = function () {
+
+    };
+
+    global.<%= Name %> = <%= Name %>;
+
+})(this);

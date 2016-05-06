@@ -1,0 +1,33 @@
+(function (global) {
+
+    var <%= Name %> = function (game, parent, x, y) {
+        Phaser.Group.call(this, game, parent,'<%= Name %>', false, false);
+        this.x = x;
+        this.y = y;
+        this.game = game;
+
+        //Add Children here,
+        var sprite = game.add.sprite(0, 0, 'sheet',0);
+        this.add(key);
+
+        //Sprites (x,y) is relative to (his.x,this.y)
+        this.setAllChildren("x",this.x,false,false,1 /**Add*/);
+        this.setAllChildren("y",this.y,false,false,1 /**Add*/);
+
+    };
+
+
+    <%= Name %>.prototype = Object.create(Phaser.Group.prototype);
+    <%= Name %>.prototype.constructor = <%= Name %>;
+
+    <%= Name %>.prototype.create = function () {
+
+    };
+
+    <%= Name %>.prototype.update = function () {
+
+    };
+
+    global.<%= Name %> = <%= Name %>;
+
+})(this);

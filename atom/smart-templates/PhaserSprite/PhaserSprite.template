@@ -1,0 +1,27 @@
+(function (global) {
+
+    var <%= Name %> = function (game, x, y) {
+        Phaser.Sprite.call(this, game, x, y, '<%= Spritesheet %>');
+        this.game = game;
+        game.physics.arcade.enable(this);
+        this.body.setSize(16, 16, 0, 0);
+        this.anchor.setTo(0.5, 1); //so it flips around its middle
+        this.animations.add('idle', [], 10, true);
+
+    };
+
+
+    <%= Name %>.prototype = Object.create(Phaser.Sprite.prototype);
+    <%= Name %>.prototype.constructor = <%= Name %>;
+
+    <%= Name %>.prototype.create = function () {
+
+    };
+
+    <%= Name %>.prototype.update = function () {
+
+    };
+
+    global.<%= Name %> = <%= Name %>;
+
+})(this);
