@@ -1,0 +1,6 @@
+[submodule "generic-phaser-top-down"]
+	path = generic-phaser-top-down
+	url = git@github.com:ztiromoritz/generic-phaser-top-down.git
+[submodule "generic-phaser-platformer"]
+	path = generic-phaser-platformer
+	url = git@github.com:ztiromoritz/generic-phaser-platformer.git
